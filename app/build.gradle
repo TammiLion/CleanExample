@@ -33,10 +33,11 @@ dependencies {
     //Network
     // Retrofit http://square.github.io/retrofit/ || https://github.com/square/retrofit
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    //HTTP client
     //OKHTTP
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
     //Logging calls
-    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.7.0'
     //Converter factory, JSON to pojo
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
     //Call adapter factory, Call to Observable
@@ -49,19 +50,18 @@ dependencies {
     // explicitly depend on RxJava's latest version for bug fixes and new features.
     compile 'io.reactivex.rxjava2:rxjava:2.1.0'
 
-    //help for lambdas
-    //provided 'javax.annotation:jsr250-api:1.0'
-
     //View binding
     //Butterknife: https://github.com/JakeWharton/butterknife
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 
-    //JSON parsing
-    //compile 'com.google.code.gson:gson:2.7'
-
     //Logging
+    //Timber: https://github.com/JakeWharton/timber
     compile 'com.jakewharton.timber:timber:4.5.1'
+
+    //Debugging
+    //LeakCanary
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
 
     //Standard
     compile fileTree(dir: 'libs', include: ['*.jar'])
